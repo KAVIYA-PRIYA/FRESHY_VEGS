@@ -1,44 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Freshy Veggies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshy Veggies - Nature's Bounty Delivered</title>
+    <style>
+        /* Reset and font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            background: linear-gradient(to bottom right, #b5e48c, #99d98c, #76c893, #52b69a, #34a0a4);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        /* Navigation */
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        .form-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .form-section p {
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #34a0a4;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #238f8b;
+            transform: scale(1.05);
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .form-buttons button {
+            background-color: #34a0a4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .form-buttons button:hover {
+            background-color: #238f8b;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+    </style>
 </head>
 
-<body background="https://i.pinimg.com/originals/6c/55/bb/6c55bb682541f51946025683440b8d10.jpg">
-
-    <center>
+<body>
+    <header>
         <h1>Freshy Veggies</h1>
-        <h3>At Your Doorstep!</h3>
-    </center>
+        <h3>Nature's Bounty Delivered</h3>
+    </header>
 
-    <table border="2" width="100%"; bgcolor="green">
-        <tr>
-            <th>Home</th>
-            <th>About us</th>
-            <th>Blog</th>
-            <th>Shop</th>
-            <th>Contact us</th>
-        </tr>
-    </table>
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Reviews</a>
+    </nav>
 
-    <center>
-        <img src="https://st2.depositphotos.com/1143769/11437/v/450/depositphotos_114376034-stock-illustration-always-fresh-food-label-stamp.jpg" width="200" height="200">
-        <img src="https://media.istockphoto.com/id/1206704220/vector/free-delivery-sign-free-shipping-service-icon-stock-vector.jpg?s=612x612&w=0&k=20&c=vlRaEJ9dGPtBCejEN32lAINfa7fQjsRmMMpNMWZqJl8=" width="200"
-            height="200">
-        <img src="https://png.pngtree.com/png-vector/20191029/ourmid/pngtree-best-quality-stamp-green-round-grunge-vintage-best-quality-sign-isolated-png-image_1870483.jpg"
-            width="200" height="200">
-        <img src="https://w7.pngwing.com/pngs/797/993/png-transparent-graphy-24-7-service-customer-service-twenty-four-miscellaneous-text-service.png" width="200" height="200"><br><br>
-        <img src="https://media.istockphoto.com/id/95708018/photo/a-shopping-trolley-overloaded-with-fresh-food.jpg?s=612x612&w=0&k=20&c=D4JImQx51Lr-3fZVKnWQCXdTBM0kn01hBhRpUHbU3uw=" width="200" height="200"><br><br>
+    <!-- Form Section -->
+    <div class="form-section">
+        <h2>Welcome to Freshy Veggies!</h2>
+        <p>Please choose an option below:</p>
 
-        <a href="#"><h2>VIEW DETAILS</h2></a>&nbsp;&nbsp;<br><br>
+        <div class="form-buttons">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showRegister()">Register</button>
+        </div>
 
-        <form>
-            <input type="submit" value="Login"> <h4>OR</h4> <input type="submit" value="Sign up">
+        <form id="auth-form" style="margin-top: 20px; display: none;">
+            <!-- Dynamic form will load here -->
         </form>
-    
-    
-</center>
+    </div>
+
+    <footer>
+        &copy; 2024 Freshy Veggies. All rights reserved.
+    </footer>
+
+    <script>
+        // Display Login Form
+        function showLogin() {
+            const form = document.getElementById('auth-form');
+            form.style.display = 'block';
+            form.innerHTML = `
+                <h3>Login</h3>
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            `;
+        }
+
+        // Display Register Form
+        function showRegister() {
+            const form = document.getElementById('auth-form');
+            form.style.display = 'block';
+            form.innerHTML = `
+                <h3>Register</h3>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <input type="submit" value="Register">
+            `;
+        }
+    </script>
 </body>
 
 </html>
